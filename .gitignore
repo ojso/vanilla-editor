@@ -1,0 +1,12 @@
+### vscode
+.vscode
+
+### JupyterNotebooks ###
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+node_modules
+test/instrumented/
+*.nupkg
+*.orig
+.npmrc
