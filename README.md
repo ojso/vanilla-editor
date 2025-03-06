@@ -11,7 +11,7 @@ Forked from https://github.com/Talv/x-editable.git
 - support select2 version 4.0
 
 ## Live Demo
-**https://www.ojso.com/demo/vanilla-editor/demo.html**
+**https://www.ojso.com/demo/editor/demo.html**
 
 ## Project Status
 Actively Maintained
@@ -25,7 +25,7 @@ Use **https://github.com/ojso/vanilla-editor/**.
 
 Bootstrap 4 build:
 ```html
-<link href="https://cdn.jsdelivr.net/npm/vanilla-editor@1.0.3/dist/bootstrap4-editable/css/bootstrap-editable.css" rel="stylesheet"/>
-<script src="https://cdn.jsdelivr.net/npm/vanilla-editor@1.0.3/dist/bootstrap4-editable/js/bootstrap-editable.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/vanilla-editor@1.0.4/dist/bootstrap4-editable/css/bootstrap-editable.css" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/vanilla-editor@1.0.4/dist/bootstrap4-editable/js/bootstrap-editable.min.js"></script>
 ```
 

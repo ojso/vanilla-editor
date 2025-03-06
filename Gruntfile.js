@@ -101,9 +101,9 @@ function getFiles() {
         inputs + 'text.js',
         inputs + 'textarea.js',
         inputs + 'select.js',
+        inputs + 'select2.js',
         inputs + 'checklist.js',
-        inputs + 'html5types.js',
-        inputs + 'select2/select2.js',
+        inputs + 'html5types.js',        
         inputs + 'combodate/lib/combodate.js',
         inputs + 'combodate/combodate.js'
     ];
@@ -270,12 +270,12 @@ module.exports = function (grunt) {
         //   },          
         // },
 
-        connect: {
-            server: {
-                port: 8000,
-                base: '.'
-            }
-        },
+        // connect: {
+        //     server: {
+        //         port: 8000,
+        //         base: '.'
+        //     }
+        // },
 
         jshint: {
             options: {
@@ -299,14 +299,11 @@ module.exports = function (grunt) {
                 'src/editable-form/*.js',
                 'src/containers/*.js',
                 'src/element/*.js',
-
                 'src/inputs/*.js',
                 'src/inputs/date/*.js',
                 'src/inputs/dateui/*.js',
                 'src/inputs/datetime/*.js',
                 'src/inputs/combodate/*.js',
-                'src/inputs/select2/*.js',
-
                 'src/inputs-ext/address/*.js',
                 'src/inputs-ext/wysihtml5/*.js'
             ]
