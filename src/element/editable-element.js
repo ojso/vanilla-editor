@@ -600,14 +600,19 @@ Makes editable any HTML element on the page. Applied as jQuery method.
                                 editable.options.pk.call(editable.options.scope) : 
                                 editable.options.pk 
                         };
-
+                        
                         //additional params
-                        if(typeof editable.options.params === 'function') {
-                            params = editable.options.params.call(editable.options.scope, params);  
-                        } else {
-                            //try parse json in single quotes (from data-params attribute)
-                            editable.options.params = $.fn.editableutils.tryParseJson(editable.options.params, true);   
-                            $.extend(params, editable.options.params);
+                        // if(typeof editable.options.params === 'function') {
+                        //     params = editable.options.params.call(editable.options.scope, params);  
+                        // } else {
+                        //     //try parse json in single quotes (from data-params attribute)
+                        //     editable.options.params = $.fn.editableutils.tryParseJson(editable.options.params, true);   
+                        //     $.extend(params, editable.options.params);
+                        // }
+
+                        //additional processResult                
+                        if(typeof editable.options.processResult === 'function') {
+                            params = editable.options.processResult.call(editable.options.scope, params);  
                         }
 
                         ajaxOptions = {
